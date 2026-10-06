@@ -168,6 +168,18 @@ def _create_tools_menu(window, menubar):
 
     tools_menu.addSeparator()
 
+    _add_action(
+        window,
+        tools_menu,
+        "Supreme Security Center",
+        lambda: __import__(
+            "shoggoth.ui.security_center", fromlist=["open_security_center"]
+        ).open_security_center(window),
+        shortcut="Ctrl+Alt+S",
+    )
+
+    tools_menu.addSeparator()
+
     _add_action(window, tools_menu, tr("MENU_ADD_FADED_EDGE"),
                 lambda: image_tools.open_fade_edge_dialog(window))
 
