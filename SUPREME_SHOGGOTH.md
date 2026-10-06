@@ -27,3 +27,20 @@ OBSERVE -> RETRIEVE -> MODEL -> PROPOSE -> TEVV -> HUMAN GATE -> APPLY -> VERIFY
 - Telemetry remains opt-in and privacy-tier aware.
 - Local-first behavior is preferred.
 - Every automated recommendation should be source-labeled and reversible.
+
+
+## Federal investigative defensive visual stack
+The branch now includes an **unofficial defensive prototype** security center inspired by
+federal investigative evidence-handling requirements. It is not an FBI product and does
+not claim agency affiliation.
+
+Security controls:
+- Local-only, read-only folder/package verification
+- SHA-256 file integrity records
+- Chain-of-custody style evidence manifest export
+- Potential secret-exposure warnings
+- World-writable and boundary-crossing symlink warnings
+- Executable-content provenance review flags
+- Redacted report copy
+- HUMAN-FIRST governance gate and TEVV status
+- No remote exploitation, surveillance, credential collection, or weapon functionality
